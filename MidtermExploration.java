@@ -332,6 +332,10 @@ public class MidtermExploration {
         return summation(start, (start + stop) / 2) + summation((start + stop) / 2 + 1, stop);
     }
 
+    public static int summationConstant(int start, int stop) {
+        return stop*(stop+1)/2 - (start-1)*start/2;
+    }
+
     public static void mergeSort(int left, int right, int[] arr) {
         if (left < right) {
             int mid = (left + right) / 2;
