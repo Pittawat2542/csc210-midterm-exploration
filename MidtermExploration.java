@@ -7,6 +7,12 @@ public class MidtermExploration {
 
     public static void main(String[] args) {
         System.out.println("Implement program to test each function here!");
+        System.out.println("------------Test euclid----------");
+        System.out.println("must be 5 : "+ divideAndConquerGCD(50, 15, 1850, 5));
+        System.out.println("must be 1 : "+ divideAndConquerGCD(50, 15, 1850, 91));
+        System.out.println("must be 1 : "+ consecutiveGCD(50, 91));
+        System.out.println("--------Multiply Large Number-------");
+        System.out.println(multiplyLargeNumber("5897469", "45687"));
     }
 
     /* --------------- Chapter 1 ---------------- */
