@@ -3,10 +3,16 @@ package midterm.exploration;
 import java.util.ArrayList;
 import java.util.Stack;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class MidtermExploration {
 
     public static void main(String[] args) {
         System.out.println("Implement program to test each function here!");
+        System.out.println("------------Test euclid----------");
+        System.out.println("must be 5 : "+ divideAndConquerGCD(50, 15, 1850, 5));
+        System.out.println("must be 1 : "+ divideAndConquerGCD(50, 15, 1850, 91));
+        System.out.println("must be 1 : "+ consecutiveGCD(50, 91));
     }
 
     /* --------------- Chapter 1 ---------------- */
@@ -47,7 +53,7 @@ public class MidtermExploration {
             min -= 1;
         }
 
-        return 2;
+        return 1;
     }
 
     public static int middleSchoolGCD(int m, int n) {
