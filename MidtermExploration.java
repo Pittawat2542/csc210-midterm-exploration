@@ -481,8 +481,14 @@ public class MidtermExploration {
         c1 = (Long.parseLong(multiplyLargeNumber(addLargeNumber(a1, a0), addLargeNumber(b1, b0))) - Long.parseLong(addLargeNumber(c2, c0))) + "";
 
         c = addLargeNumber(addLargeNumber(addSuffixZero(c2, a.length()), addSuffixZero(c1, a.length() / 2)), c0);
-
-        return c;
+        int index=0;
+        for (int i = 0; i < c.length(); i++,index++) {
+            if( c.charAt(i)!='0' ){
+                break;
+            }
+        }
+        String output = c.substring(index, c.length());
+        return output;
     }
 
     public static String addPrefixZeroToTheNextTwoPowerByN(String n) {
